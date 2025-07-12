@@ -1,0 +1,83 @@
+/* FeaturedItems.css */
+
+.featured-items {
+  background: #fff;
+  padding: 2.5rem 0;
+}
+
+.featured-items h2 {
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.featured-items p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: #218838;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 320px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.carousel-slide {
+  min-width: 320px;
+  padding: 0 8px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.indicator.active {
+  background: #28a745;
+}
+
+@media (max-width: 400px) {
+  .carousel-wrapper, .carousel-slide {
+    min-width: 220px;
+    width: 220px;
+  }
+}

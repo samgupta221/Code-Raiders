@@ -1,0 +1,100 @@
+/* LandingPage.css */
+
+.landing-page {
+  background: #f4f8f6;
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(120deg, #28a745 0%, #a8e063 100%);
+  color: #fff;
+  padding: 3.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #e8f5e9;
+}
+
+.sustainability-section {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+.sustainability-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #28a745;
+}
+
+.benefits-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: #f4f8f6;
+  border-radius: 12px;
+  padding: 1.5rem 1.2rem;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

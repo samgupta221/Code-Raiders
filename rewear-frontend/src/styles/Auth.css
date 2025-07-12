@@ -1,0 +1,132 @@
+/* Auth.css */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7fafc;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.auth-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.form-group input.error {
+  border-color: #e74c3c;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.92rem;
+  margin-top: 0.2rem;
+}
+
+.error-message {
+  color: #fff;
+  background: #e74c3c;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.btn {
+  padding: 0.9rem 0;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:disabled {
+  background: #b7e0c4;
+  cursor: not-allowed;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.auth-switch {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #28a745;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.3rem;
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.link-button:hover {
+  color: #218838;
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 1.5rem 0.7rem;
+    max-width: 95vw;
+  }
+}
